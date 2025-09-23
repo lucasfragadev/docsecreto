@@ -1,5 +1,5 @@
 {
-  "name": "clone-tabnews",
+  "name": "docsecreto",
   "version": "1.0.0",
   "description": "Projeto para aprender mais sobre programação.",
   "main": "index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucasfragadev/clone-tabnews.git"
+    "url": "git+https://github.com/lucasfragadev/docsecreto.git"
   },
   "author": "lucasaf",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lucasfragadev/clone-tabnews/issues"
+    "url": "https://github.com/lucasfragadev/docsecreto/issues"
   },
-  "homepage": "https://github.com/lucasfragadev/clone-tabnews#readme",
+  "homepage": "https://github.com/lucasfragadev/docsecreto#readme",
   "dependencies": {
     "next": "^13.1.6",
     "react": "^18.2.0",
