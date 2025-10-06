@@ -1,3 +1,3 @@
 # DocSecret - ABI
 
-Projeto para aprender mais sobre programação.
+Website for Arena Breakout Infinite game lovers
