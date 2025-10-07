@@ -1,6 +1,6 @@
 import { Client } from "pg";
- 
-async function query (queryObject) {
+
+async function query(queryObject) {
   const client = new Client({
     host: process.env.POSTGRES_HOST,
     port: process.env.POSTGRES_PORT,
@@ -9,11 +9,11 @@ async function query (queryObject) {
     password: process.env.POSTGRES_PASSWORD,
     ssl: getVSSLValues(),
   });
-  
+
   try {
     await client.connect();
     const result = await client.query(queryObject);
-    return result;  
+    return result;
   } catch (err) {
     console.error(err);
     throw err;
@@ -24,7 +24,7 @@ async function query (queryObject) {
 
 export default {
   query: query,
-}
+};
 
 function getVSSLValues() {
   if (process.env.POSTGRES_CA) {
@@ -32,5 +32,5 @@ function getVSSLValues() {
       ca: process.env.POSTGRES_CA,
     };
   }
-  return process.env.NODE_ENV === 'development' ? false : true;
+  return process.env.NODE_ENV === "development" ? false : true;
 }
