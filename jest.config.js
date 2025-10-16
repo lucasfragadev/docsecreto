@@ -1,8 +1,10 @@
 const nextJest = require("next/jest");
 
-const createJestConfig = nextJest();
-const jestConfig = createJestConfig({
-  moduleDirectories: ["node_modules", "<rootDir>"], 
-});
+const createJestConfig = nextJest({ dir: "." });
 
-module.exports = jestConfig;
+const customJestConfig = {
+  testEnvironment: "node",
+  moduleDirectories: ["node_modules", "<rootDir>"],
+};
+
+module.exports = createJestConfig(customJestConfig);
